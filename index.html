@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="weather-container">
+    <h1>Weather Dashboard</h1>
+    
+    <div class="search-container">
+        <label for="cityInput">Enter City:</label>
+        <input type="text" id="cityInput" placeholder="E.g., New York">
+        <button onclick="getWeather()">Get Weather</button>
+    </div>
+
+    <div class="current-weather">
+        <h2>Current Weather</h2>
+        <p id="currentTemperature"></p>
+        <p id="weatherCondition"></p>
+        <p id="otherInfo"></p>
+    </div>
+
+    <div class="hourly-forecast">
+        <h2>Hourly Forecast</h2>
+        <ul id="hourlyList"></ul>
+    </div>
+
+    <div class="daily-forecast">
+        <h2>Daily Forecast</h2>
+        <ul id="dailyList"></ul>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
